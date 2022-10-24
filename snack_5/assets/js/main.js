@@ -18,12 +18,12 @@ function newArray(array, num1, num2) {
 
     let generatedList = [];
 
-    array.forEach((element, index, array) => {
-        if (array[index] > num1 && array[index] >= num2 + 1) {
-            generatedList.push(array[index])
+    array.forEach((element, index) => {
+        if (index >= num1 && index <= num2) {
+            generatedList.push(array[index]);
         }
     });
-    return generatedList
+    return generatedList;
 }
 
 const newList = newArray(list, numA, numB);

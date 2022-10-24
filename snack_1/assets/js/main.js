@@ -57,7 +57,7 @@ const zucchine = [
 let sum = 0;
 
 zucchine.forEach(zucchina => {
-    sum += zucchina.peso;
+    sum += zucchina.varieta + ' ';
 });
 
 console.log(sum);
