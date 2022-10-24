@@ -5,21 +5,22 @@
 const numbersList = [1, 2, 3, 4, 5, 6];
 
 const lettersList = ['a', 'b', 'c', 'd', 'e', 'f'];
-let newList = [...numbersList, ...lettersList]
+
 
 function listSum(list1, list2) {
 
+    let newList = [];
 
-    let listSum = [];
 
-    newList.foreach(element => {
-        listSum += element
-        return listSum
+    //col ciclo forEach ciclo nell'array , impostando come parametri elemento e posizione
+    //inserisco nella nuova lista, un elemento delle due liste ad ogni iterazione con push 
+    list1.forEach((element, index) => {
+        newList.push(list1[index]);
+        newList.push(list2[index]);
     })
 
-
-
+    return newList
 
 }
-const mergeList = listSum(newList)
+const mergeList = listSum(numbersList, lettersList)
 console.log(mergeList);
