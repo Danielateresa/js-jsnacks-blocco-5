@@ -54,3 +54,11 @@ const zucchine = [
         lunghezza: 10
     }
 ]
+let sum = 0;
+
+zucchine.forEach(zucchina => {
+    sum += zucchina.peso;
+});
+
+console.log(sum);
+
