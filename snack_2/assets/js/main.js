@@ -82,7 +82,7 @@ const more15length = zucchine.filter(zucchina => {
 console.log(more15length, 'sono le zucchine che misurano più di 15 cm');
 
 let more15lengthWeight = 0;
-more15length.filter(zucchina => {
+more15length.forEach(zucchina => {
     more15lengthWeight += zucchina.peso;
 })
 
