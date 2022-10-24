@@ -12,12 +12,14 @@ function listSum(list1, list2) {
 
     let listSum = [];
 
-    numberList.foreach(element => {
+    newList.foreach(element => {
         listSum += element
         return listSum
     })
-    //console.log(newList);
 
-    const mergeList = listSum(newList)
-    console.log(mergeList);
 
+
+
+}
+const mergeList = listSum(newList)
+console.log(mergeList);
